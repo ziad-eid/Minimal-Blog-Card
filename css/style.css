@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    font-family: "sora", sans-serif;
+    background-color: #FAFAF9;
+}
+main{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+}
+main .top{
+    padding: 16px;
+}
+main .top img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+main .top span{
+    display: block;
+    font-size: 10px;
+    color: #7C19EE;
+    background-color: #f2eafdd8;
+    width: fit-content;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+main .top h3{
+    color: #20293A;
+    margin-top: 16px;
+}
+main .top p{
+    color: #394150c9;
+    width: 310px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+main .info{
+    border-top: 1px solid #ececec;
+    padding: 20px 16px;
+}
+main a{
+    display: block;
+    text-decoration: none;
+    color: #394150c9;
+    font-size: 12px;
+    font-weight: 500;
+    width: fit-content;
+    position: relative;
+}
+main a::before{
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    right: 0;
+    height: 1px;
+    width: 0;
+    background-color: #212f49;
+    transition: .3s;
+}
+main a:hover::before{
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+@media (max-width: 767px) {
+    main{
+       width: 330px;
+    }
+}
